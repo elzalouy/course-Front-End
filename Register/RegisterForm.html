@@ -10,7 +10,7 @@
     <div class="container">
       <div class="container-item">
         <!-- Register Form -->
-        <form>
+        <form id="register-form">
           <i class="fa-solid fa-user"></i>
           <h3>Register</h3>
           <!-- User name -->
@@ -51,14 +51,15 @@
             <option value="male" selected>Male</option>
             <option value="female">Female</option>
           </select>
-          <button type="button" onclick="register()">Register</button>
+          <button type="submit">Register</button>
         </form>
       </div>
     </div>
     <script>
-      function register() {
-        console.log("hi ezzat");
-      }
+      const form = document.getElementById("register-form");
+      form.addEventListener("submit", function (event) {
+        window.alert({ event });
+      });
     </script>
   </body>
 </html>
