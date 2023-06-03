@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 19% 58% 19%;
+  gap: 25px;
+  margin-inline: auto;
+  margin-top: 85px;
+  padding-inline: 10%;
+}
+
+.first-left-side-card,
+.second-left-side-card,
+.thrid-left-side-card,
+.right-card {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+
+
+}
+
+.background {
+  height: 136px;
+  width: 100%;
+}
+
+.avatar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -16%;
+}
+
+.avatar1 img {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.first-left-side-card h5 {
+  text-align: center;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 1px;
+
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 12px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  color: #343a40;
+}
+
+.second-left-side-card {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+
+
+}
+
+.second-left-side-card h5 {
+  margin-bottom: 25px;
+}
+
+a {
+  color: #007bff;
+}
+
+.second-left-side-card a {
+
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.second-left-side-card a:hover {
+  text-decoration: underline;
+}
+
+.second-left-side-card i,
+.edit {
+  padding-bottom: 30px;
+}
+
+.edit i {
+  padding-bottom: 8px;
+}
+
+.thrid-left-side-card img {
+  width: 90px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+.thrid-left-side-card h5 {
+  margin-top: 1.67em;
+  padding-left: 14px;
+}
+
+.item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 img {
+  width: 168px;
+  height: 168px;
+
+}
+
+.right-card p {
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 15px;
+  padding: 0px;
+}
+
+.right-card h5 {
+  margin-top: 1.67em;
+  margin-left: 25px;
+}
+
+button {
+  border: 1px solid #17a2b8;
+  border-radius: 4px;
+  color: #17a2b8;
+  background-color: white;
+  padding: 7px;
+  margin: 20px;
+
+}
