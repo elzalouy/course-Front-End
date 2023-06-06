@@ -4,9 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="timeline.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/acb48f8955.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Timeline</title>
   </head>
   <body>
-    <h1>hello timeline</h1>
+    <header>
+      <a href="/Login/loginForm.html" class="logo">
+        <img src="../assets/brand-white.png" alt="logo" />
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+
+        <div class="nav-search-container">
+          <form>
+            <input type="text" name="search" id="search" placeholder="search" />
+          </form>
+
+          <i class="fa-regular fa-bell"></i>
+          <div class="avatar">
+            <img src="../assets/avatar-dhg.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end nav bar  -->
+    <!-- start timeline section -->
+
+    <div class="container">
+      <!-- start first left side section -->
+      <div class="first-left-side-card">
+        <img
+          class="background"
+          src="images/photo-1455448972184-de647495d428.jpg"
+          alt="background"
+        />
+        <div class="avatar1"><img src="images/avatar-dhg.png" alt="" /></div>
+        <h5>Dave Gamache</h5>
+        <p>
+          I wish i was a little bit taller, wish i was a baller, wish i had a
+          girl… also.
+        </p>
+        <ul>
+          <li>Friends <br />12M</li>
+          <li>Enimes <br />1</li>
+        </ul>
+      </div>
+      <!--end first left side section -->
+
+      <div class="item"></div>
+
+      <!-- start first right side section -->
+      <div class="right-card">
+        <h5>Sponsored</h5>
+        <img src="images/right1.jpg" alt="" />
+        <p>
+          It might be time to visit Iceland. Iceland is so chill, and everything
+          looks cool here. Also, we heard the people are pretty nice. What are
+          you waiting for?
+        </p>
+        <button>Buy a ticket</button>
+      </div>
+      <!-- end first right side section -->
+      <!-- start second left side section-->
+      <div class="second-left-side-card">
+        <h5>About <a href="#">Edit</a></h5>
+        <div>
+          <i class="fa-solid fa-calendar-days"></i> Went to
+          <a href="#">oh canada</a>
+        </div>
+        <div class="edit">
+          <i class="fa-solid fa-user-group"></i> Become a friend with<a href="#"
+            >obama
+          </a>
+        </div>
+        <div>
+          <i class="fa-regular fa-building"></i> Work at
+          <a href="#"> Github </a>
+        </div>
+        <div>
+          <i class="fa-solid fa-house"></i> Live in<a href="#">
+            San francisco
+          </a>
+        </div>
+        <div>
+          <i class="fa-solid fa-location-pin"></i> From
+          <a href="#"> Seattle, WA</a>
+        </div>
+      </div>
+      <!-- end second left side section -->
+
+      <div class="item"></div>
+      <!-- start second  right section -->
+      <div class="second-right-side-card">
+        <h5>Likes <a href="#">.View All</a></h5>
+        <div>
+          <img src="images/avatar-dhg.png" alt="" />
+          <h6>Jacob Thornton @fat</h6>
+          <button><i class="fa-solid fa-user-group"></i>Follow</button>
+        </div>
+        <div>
+          <img src="images/avatar-fat.jpg" alt="" />
+          <h6>Mark otto</h6>
+          <button><i class="fa-solid fa-user-group"></i>Follow</button>
+        </div>
+      </div>
+
+      <!-- end second  right section -->
+      <!-- start thrid left side section -->
+      <div class="thrid-left-side-card">
+        <h5>Photos <a href="#">.Edit</a></h5>
+        <img src="images/left1.jpg" alt="left1-img" />
+        <img src="images/left4.jpg" alt="" />
+        <img src="images/left2.jpg" alt="left2-img" />
+        <img src="images/left5.jpg" alt="" />
+        <img src="images/left3.jpg" alt="left3-img" />
+        <img src="images/left6.jpg" alt="" /> <br /><br />
+      </div>
+      <!-- end thrid left side section -->
+    </div>
   </body>
 </html>
