@@ -1,7 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script></script>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <table id="users" style="border: 1px solid black">
+      <thead>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Gender</td>
+        <td>City</td>
+        <td>street</td>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      let tableBody = document.getElementById("users");
+      let row = tableBody.insertRow();
+      // name cell
+      let name = row.insertCell();
+      name.innerText = "Ezat";
+      // email cell
+      let email = row.insertCell();
+      email.innerText = "ezatelzalouy@gmail.com";
+      // gender cell
+      let gender = row.insertCell();
+      gender.innerText = "male";
+      // city cell
+      let city = row.insertCell();
+      city.innerText = "mansoura";
+
+      // street cell
+      let street = row.insertCell();
+      street.innerText = "10st";
+
+      // how to insert an array (loop, map, forEach)
+    </script>
+  </body>
 </html>

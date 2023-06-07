@@ -133,23 +133,23 @@ form {
   border-color: #e9ecef;
   border-radius: 0px 5px 5px 0px;
 }
-.middel-side .body-items{
+.middel-side .body-items {
   display: grid;
-  grid-template-columns: 15% 74% 6% ;
+  grid-template-columns: 15% 74% 6%;
   padding-top: 15px;
 }
-.body-items>img{
+.body-items .user-photo img {
   border-radius: 50%;
   width: 60px;
 }
-.middel-side h5{
+.middel-side h5 {
   margin-bottom: 0px;
   font-size: 20px;
 }
-.middel-side p{
+.middel-side p {
   margin-top: 10px;
-    text-align: justify;
-    font-size: 17px;
+  text-align: justify;
+  font-size: 17px;
 }
 
 /*input[type=text]:focus {
