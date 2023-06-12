@@ -1,0 +1,38 @@
+/* selector */
+body {
+    /* property : value */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  i {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+  }
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+  input,
+   {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #717171;
+    margin: 10px 0px 10px 0px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #04aa6d;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .container-item {
+    padding: 20px;
+    background: #f2f2f2;
+  }
