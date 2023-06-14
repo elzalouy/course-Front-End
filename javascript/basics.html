@@ -2,11 +2,31 @@
 <html>
   <head>
     <style>
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      div {
+        width: 50%;
+        padding: 20px;
+      }
       table {
         border-collapse: collapse;
+        width: 100%;
+        height: 100%;
       }
       td {
         border: 1px solid black;
+      }
+      input,
+      select,
+      button[type="submit"] {
+        width: 100%;
+        margin-block: 5px;
+        padding-block: 5px;
       }
     </style>
   </head>
@@ -18,31 +38,26 @@
         <td>Gender</td>
         <td>City</td>
         <td>street</td>
-        
       </thead>
       <tbody></tbody>
     </table>
     <script>
-      let tableBody = document.getElementById("users");
-      let row = tableBody.insertRow();
-      // name cell
-      let name = row.insertCell();
-      name.innerText = "Ezat";
-      // email cell
-      let email = row.insertCell();
-      email.innerText = "ezatelzalouy@gmail.com";
-      // gender cell
-      let gender = row.insertCell();
-      gender.innerText = "male";
-      // city cell
-      let city = row.insertCell();
-      city.innerText = "mansoura";
-
-      // street cell
-      let street = row.insertCell();
-      street.innerText = "10st";
-
-      // how to insert an array (loop, map, forEach)
+      // array of html elements
+      let forms = document.getElementsByTagName("form");
+      let form = forms[0];
+      // add event listener
+      form.addEventListener("submit", function (e) {
+        // stop reloading the page
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        let name = formData.get("name");
+        let email = formData.get("email");
+        let gender = formData.get("gender");
+        let birthdate = formData.get("birthdate");
+        // call the addTableRow
+        addTableRow(name, email, gender, birthdate);
+        form.reset();
+      });
     </script>
   </body>
 </html>
