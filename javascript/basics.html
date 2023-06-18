@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="./script.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="./basics.css" />
-    <style>
-      .container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        box-sizing: border-box;
-      }
-      div {
-        width: 50%;
-        padding: 20px;
-      }
-      table {
-        border-collapse: collapse;
-        width: 100%;
-        height: 100%;
-      }
-      td {
-        border: 1px solid black;
-      }
-      input,
-      select,
-      button[type="submit"] {
-        width: 100%;
-        margin-block: 5px;
-        padding-block: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <h1>Add Employee</h1>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
 
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+<head>
+  <script src="./script.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./basics.css" />
+  <style>
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
 
-          <label for="gender">gender</label>
-          <select name="gender" id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-          <label for="birthdate">Birth Date</label>
-          <input type="date" name="birthdate" id="birthdate" />
-          <button type="submit">Save</button>
-        </form>
-      </div>
-      <div>
-        <table id="users" style="border: 1px solid black">
-          <thead>
-            <td>Name</td>
-            <td>Email</td>
-            <td>Gender</td>
-            <td>Birth Date</td>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
+    div {
+      width: 50%;
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      height: 100%;
+    }
+
+    td {
+      border: 1px solid black;
+    }
+
+    input,
+    select,
+    button[type="submit"] {
+      width: 100%;
+      margin-block: 5px;
+      padding-block: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1>Add Employee</h1>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="gender">gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="birthdate">Birth Date</label>
+        <input type="date" name="birthdate" id="birthdate" />
+        <button type="submit">Save</button>
+      </form>
     </div>
-    <script>
-      // array of html elements
-      let forms = document.getElementsByTagName("form");
-      let form = forms[0];
-      // add event listener
-      form.addEventListener("submit", function (e) {
-        // stop reloading the page
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        let name = formData.get("name");
-        let email = formData.get("email");
-        let gender = formData.get("gender");
-        let birthdate = formData.get("birthdate");
-        // call the addTableRow
-        addTableRow(name, email, gender, birthdate);
-        form.reset();
-      });
-    </script>
-  </body>
+    <div>
+      <table id="users" style="border: 1px solid black">
+        <thead>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Gender</td>
+          <td>Birth Date</td>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    // array of html elements
+    let forms = document.getElementsByTagName("form");
+    let form = forms[0];
+    // add event listener
+    form.addEventListener("submit", function (e) {
+      // stop reloading the page
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      let name = formData.get("name");
+      let email = formData.get("email");
+      let gender = formData.get("gender");
+      let birthdate = formData.get("birthdate");
+      // call the addTableRow
+      addTableRow(name, email, gender, birthdate);
+      form.reset();
+    });
+  </script>
+</body>
+
 </html>
