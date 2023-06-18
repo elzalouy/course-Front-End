@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1 id="title"></h1>
+    <script>
+
+        // (1) Writing inside an html element
+        // globalObject.function to get the element
+        let h1Element = document.getElementById("title")
+        // modify the element
+        h1Element.innerHTML = "Hello Html from js";
+        // modify the style
+        h1Element.style = "color:white;font-size:25px;background:black;"
+        // create a new html element
+        let link = document.createElement("a");
+        link.href = "../Login/loginForm.html";
+        link.innerText = "Login"
+        // append the element to the h1 element
+        h1Element.appendChild(link);
+
+        // (2) log
+
+        /*
+        Let 
+        1- cann't be redeclaredd
+        2- must be declared before use
+        3- have block scope
+        */
+        // console.log(x); // wrong
+        let x = 1;
+        console.log(x); // correct 
+
+        // let x=0; wrong
+
+
+    </script>
+</body>
+
+</html>
