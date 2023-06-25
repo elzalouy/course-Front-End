@@ -19,10 +19,16 @@ body {
   margin-top: 85px;
   padding-inline: 10%;
 }
+.left-card {
+  display: grid;
+  grid-template-rows: 41% 36% 30%;
+  gap: 30px;
+}
+
 .first-left-side-card,
 .second-left-side-card,
 .thrid-left-side-card,
-.right-card,
+.first-right-section,
 .second-right-side-card,
 .footer,
 .middel-side {
@@ -48,6 +54,7 @@ body {
 }
 .first-left-side-card h5 {
   text-align: center;
+  margin-bottom: auto;
 }
 h5 {
   font-weight: 500;
@@ -58,16 +65,18 @@ h5 {
   font-size: 16px;
   letter-spacing: 0.1em;
   text-align: justify;
-  padding: 12px;
+  padding: 1px 13px 5px 13px;
 }
-ul {
+.first-left-side-card ul {
+  justify-content: center;
+  padding: 0px;
   display: flex;
 }
-ul li {
+.first-left-side-card ul li {
   color: #343a40;
 }
 .second-left-side-card,
-.right-card {
+.first-right-section {
   display: flex;
   padding: 15px;
   flex-direction: column;
@@ -101,8 +110,8 @@ a {
   margin: 2px;
 }
 
-.thrid-left-side-card,
-.footer {
+.thrid-left-side-card
+ {
   padding: 6px;
 }
 .thrid-left-side-card {
@@ -158,10 +167,15 @@ form {
   border-color:#17a2b8;
  
 }*/
-.right-card img {
+.right-card{
+  display: grid;
+    gap: 30px;
+    grid-template-rows: 45% 36% 15%;
+}
+.first-right-section img {
   width: 100%;
 }
-.right-card p {
+.first-right-section p {
   text-align: justify;
 }
 button {
@@ -171,7 +185,7 @@ button {
   background-color: white;
   padding: 7px;
 }
-.right-card button {
+.first-right-section button {
   width: 45%;
 }
 button:hover {
@@ -182,6 +196,10 @@ button:hover {
   border-radius: 50%;
   width: 80px;
   margin-bottom: 1.4em;
+}
+.second-right-side-card button{
+  width: 72%;
+  display: block;
 }
 
 .right-item-card2 {
@@ -194,8 +212,8 @@ button:hover {
   padding: 15px;
   text-align: justify;
   font-size: 20px;
-  margin-top: 0px;
-  height: 100%;
+ margin: auto;
+  height: 33%;
 }
 .second-right-side-card h5 {
   font-weight: 500;
@@ -204,18 +222,18 @@ button:hover {
 }
 
 .second-right-side-card h6 {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
-  margin-top: 4px;
+  margin: auto;
 }
 hr {
   margin-bottom: 0px;
   margin-top: 0px;
 }
-
-.footer {
-  height: 160px;
+.footer{
+  padding: 10%;
 }
+
 .footer a {
   text-decoration: none;
 }

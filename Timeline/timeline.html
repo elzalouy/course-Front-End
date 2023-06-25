@@ -46,12 +46,13 @@
     <!-- end nav bar  -->
     <!-- start timeline section -->
     <div class="container">
+    <div class="left-card">
       <!-- start first left side section -->
       <div class="first-left-side-card">
         <img
-          class="background"
-          src="images/photo-1455448972184-de647495d428.jpg"
-          alt="background"
+        class="background"
+        src="images/photo-1455448972184-de647495d428.jpg"
+        alt="background"
         />
         <div class="avatar1"><img src="images/avatar-dhg.png" alt="" /></div>
         <h5>Dave Gamache</h5>
@@ -64,19 +65,62 @@
           <li>Enimes <br />1</li>
         </ul>
       </div>
-      <!--end first left side section -->
-      <!-- start middel side section -->
-      <div class="middel-side">
-        <form>
-          <input type="text" placeholder="Message" />
-          <i class="fa-solid fa-camera"></i>
+      <!-- end first left side section -->
+      <!-- start second left side section -->
+      <div class="second-left-side-card">
+        <h5>About <a href="#">Edit</a></h5>
+        <div>
+          <i class="fa-solid fa-calendar-days"></i> Went to
+          <a href="#">oh canada</a>
+        </div>
+        <div class="edit">
+          <i class="fa-solid fa-user-group"></i> Become a friend with<a href="#"
+          >obama
+        </a>
+      </div>
+      <div>
+        <i class="fa-regular fa-building"></i> Work at
+        <a href="#"> Github </a>
+      </div>
+      <div>
+        <i class="fa-solid fa-house"></i> Live in<a href="#">
+          San francisco
+        </a>
+      </div>
+      <div>
+        <i class="fa-solid fa-location-pin"></i> From
+        <a href="#"> Seattle, WA</a>
+      </div>
+    </div>
+    <!-- end second left side section -->
+    <!-- start thrid left side section -->
+    <div class="thrid-left-side-card">
+      <h5>Photos <a href="#">.Edit</a></h5>
+      <img src="images/left1.jpg" alt="left1-img" />
+      <img src="images/left4.jpg" alt="" />
+      <img src="images/left2.jpg" alt="left2-img" />
+      <img src="images/left5.jpg" alt="" />
+      <img src="images/left3.jpg" alt="left3-img" />
+      <img src="images/left6.jpg" alt="" /> <br /><br />
+    </div>
+  </div>
+    <!--end thrid left side section -->
+    <!-- end left card -->
+
+    <!-- start middel side section -->
+   <div>
+
+     <div class="middel-side">
+       <form>
+         <input type="text" placeholder="Message" />
+         <i class="fa-solid fa-camera"></i>
         </form>
         <hr />
         <div class="body-items">
           <div class="user-photo">
             <img src="images/avatar-dhg.png" alt="" />
           </div>
-          <div>
+          <div class="post-item" style="display: grid; gap:10px">
             <h5>Dave Gamache</h5>
             <p>
               Aenean lacinia bibendum nulla sed consectetur. Vestibulum id
@@ -86,37 +130,55 @@
               euismod semper. Cum sociis natoque penatibus et magnis dis
               parturient montes, nascetur ridiculus mus.
             </p>
+            <div style="display: flex;
+            justify-content: space-between;">
 
-            <img
+              <img
               src="images/adventure-alps-clouds-2259810.jpg"
               alt=""
-              style="width: 230px; height: 132px"
-            />
-            <img
+              style="width: 230px;
+              height: 150px;"
+              />
+              <img
               src="images/celebration-colored-smoke-dark-2297472.jpg"
               alt=""
-              style="margin-bottom: -61px; width: 194px; height: 194px"
-            />
+              style="width: 200px;
+              height: 200px;"
+              />
+             
+            </div>
+            <div style="display: flex;
+            justify-content: space-between;">
+            
             <img
-              src="images/aerial-view-architectural-design-buildings-2228123.jpg"
-              alt=""
-              style="width: 230px; height: 172px"
+            src="images/aerial-view-architectural-design-buildings-2228123.jpg"
+            alt=""
+            style="width: 230px;
+            height: 172px;
+            margin-top: -50px;"
             />
+            
             <img
-              src="images/bodybuilding-exercise-fitness-2294361.jpg"
-              alt=""
-              style="width: 195px; height: 139px; margin-bottom: -26px"
+            src="images/bodybuilding-exercise-fitness-2294361.jpg"
+            alt=""
+            style="width: 200px;
+            height: 140px;"
             />
-          </div>
+          </div></div>
+          
           <small>5min</small>
         </div>
       </div>
-
+      <div></div>
+      <div></div>
+    </div>
+    
       <!-- end middel side section -->
       <!-- start first right side section -->
       <div class="right-card">
-        <h5>Sponsored</h5>
-        <img src="images/right1.jpg" alt="" />
+        <div class="first-right-section">
+          <h5>Sponsored</h5>
+          <img src="images/right1.jpg" alt="" />
         <p>
           It might be time to visit Iceland. Iceland is so chill, and everything
           looks cool here. Also, we heard the people are pretty nice. What are
@@ -124,43 +186,15 @@
         </p>
         <button>Buy a ticket</button>
       </div>
-      <!-- end first right side section -->
-      <!-- start second left side section-->
-      <div class="second-left-side-card">
-        <h5>About <a href="#">Edit</a></h5>
-        <div>
-          <i class="fa-solid fa-calendar-days"></i> Went to
-          <a href="#">oh canada</a>
-        </div>
-        <div class="edit">
-          <i class="fa-solid fa-user-group"></i> Become a friend with<a href="#"
-            >obama
-          </a>
-        </div>
-        <div>
-          <i class="fa-regular fa-building"></i> Work at
-          <a href="#"> Github </a>
-        </div>
-        <div>
-          <i class="fa-solid fa-house"></i> Live in<a href="#">
-            San francisco
-          </a>
-        </div>
-        <div>
-          <i class="fa-solid fa-location-pin"></i> From
-          <a href="#"> Seattle, WA</a>
-        </div>
-      </div>
-      <!-- end second left side section -->
+       <!-- end first right side section -->
+       <!-- start second right side section -->
 
-      <div class="item"></div>
-      <!-- start second  right section -->
       <div class="second-right-side-card">
         <h5>Likes <a href="#">.View All</a></h5>
         <div class="right-item-card2">
           <img src="images/avatar-dhg.png" alt="" />
           <h6>
-            Jacob Thornton@fat<button>
+            Jacob Thornton @fat<button>
               <i class="fa-solid fa-user-group"></i>Follow
             </button>
           </h6>
@@ -174,30 +208,17 @@
         <hr />
         <p>Dave really likes these nerds, no one knows why though.</p>
       </div>
+      <!-- end second right side section -->
 
-      <!-- end second  right section -->
-
-      <!-- start thrid left side section -->
-      <div class="thrid-left-side-card">
-        <h5>Photos <a href="#">.Edit</a></h5>
-        <img src="images/left1.jpg" alt="left1-img" />
-        <img src="images/left4.jpg" alt="" />
-        <img src="images/left2.jpg" alt="left2-img" />
-        <img src="images/left5.jpg" alt="" />
-        <img src="images/left3.jpg" alt="left3-img" />
-        <img src="images/left6.jpg" alt="" /> <br /><br />
-      </div>
-      <!-- end thrid left side section -->
-      <div class="item"></div>
       <!-- start footer section -->
-      <div class="footer">
+      <div class="footer"> 
         © 2018 Bootstrap
         <a href="#">About</a>
-        <a href="#">Help</a>
+        <a href="#">Help</a> 
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
         <a href="#">Cookies</a>
-        <a href="#">Ads</a>
+        <a href="#">Ads</a>  
         <a href="#">Info</a>
         <a href="#">Brand</a>
         <a href="#">Blog</a>
@@ -205,8 +226,8 @@
         <a href="#">Apps</a>
         <a href="#">Jobs</a>
         <a href="#">Advertise</a>
-      </div>
-      <!-- end footer section -->
+      </div>  
     </div>
+    </div>  
   </body>
-</html>
+  </html>
